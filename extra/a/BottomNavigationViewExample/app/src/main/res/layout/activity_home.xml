@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="46sp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280sp"
+
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+
+            android:layout_marginBottom="2sp"
+            android:background="@drawable/home_drawable_background"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:maxHeight="15sp"
+            android:minHeight="15sp"
+            android:text="@string/act_home_Daily"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/home_scrollView"
+            android:backgroundTint="#10FF22FF"
+            android:background="@drawable/home_drawable_border"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:paddingTop="2sp"
+            android:paddingLeft="2sp"
+
+            android:fillViewport="true"
+            android:paddingBottom="2sp"
+
+            android:layout_marginTop="10sp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_recyclerViewRequest"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <Button
+            android:id="@+id/home_drawable_ShowAllRequirements"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="50sp"
+            android:backgroundTint="#00a5ff"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/act_home_showall"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="1sp"
+
+            android:background="@drawable/home_drawable_background"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/act_home_Today"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:fillViewport="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:paddingTop="5sp"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:id="@+id/home_sliderViewContainerDonation"
+                android:background="#10FF22FF"
+                app:reverseLayout="true"
+                android:orientation="horizontal"
+                />
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <Button
+            android:id="@+id/home_drawable_ShowAllDoantions"
+            android:layout_width="wrap_content"
+
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:backgroundTint="#00a5ff"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/act_home_showall"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="1sp"
+
+            android:background="@drawable/home_drawable_background"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/act_home_ourpartner"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.smarteist.autoimageslider.SliderView
+            android:layout_marginTop="10sp"
+            android:backgroundTint="#10FF22FF"
+            android:id="@+id/home_sliderViewContainerNgo"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+
+            android:background="@drawable/home_drawable_border"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15sp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3sp"
+            app:sliderIndicatorRadius="2sp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true"
+            />
+
+        <Button
+            android:id="@+id/home_drawable_ShowAllNgo"
+            android:layout_width="wrap_content"
+
+            android:layout_height="40sp"
+
+            android:layout_gravity="right"
+            android:backgroundTint="#00a5ff"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/act_home_showall"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

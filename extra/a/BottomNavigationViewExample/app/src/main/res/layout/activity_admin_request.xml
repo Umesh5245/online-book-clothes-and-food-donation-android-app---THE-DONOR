@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminRequestActivity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Online Donations"
+        android:background="#2f2f2f"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbar"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarAdminRequest"
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+
+        android:visibility="gone" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:background="@drawable/item_spinner_bk"
+        android:layout_height="50sp"
+
+        android:id="@+id/fragment_donate_spinner_items"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10sp"
+               android:layout_marginTop="10sp">
+
+               <TextView
+                   android:id="@+id/fragment_donate_name"
+                   android:layout_width="70sp"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat_light"
+                   android:text="@string/act_admin_request_name"
+                   android:textSize="18sp" />
+
+               <EditText
+                   android:id="@+id/fragment_donate_edt_name"
+                   android:layout_width="250sp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10sp"
+                   android:fontFamily="@font/montserrat_light"
+                   android:hint="@string/act_admin_request_name_hint"
+                   android:textSize="15sp" />
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10sp"
+               android:layout_marginTop="10sp">
+
+               <TextView
+                   android:id="@+id/fragment_donate_mobile"
+                   android:layout_width="70sp"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat_light"
+                   android:text="@string/act_admin_request_mobile"
+                   android:textSize="18sp" />
+               <EditText
+                   android:layout_marginLeft="10sp"
+
+                   android:layout_width="250sp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/fragment_donate_edt_mobile"
+                   android:hint="8469514210"
+                   android:textSize="15sp"
+                   android:fontFamily="@font/montserrat_light"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10sp"
+               android:layout_marginTop="10sp">
+
+               <TextView
+                   android:id="@+id/fragment_donate_email"
+                   android:layout_width="70sp"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat_light"
+                   android:text="@string/act_admin_request_email"
+                   android:textSize="18sp" />
+               <EditText
+                   android:layout_marginLeft="10sp"
+                   android:layout_width="250sp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/fragment_donate_edt_email"
+                   android:hint="mayank17081998@gmail.com"
+                   android:textSize="15sp"
+                   android:fontFamily="@font/montserrat_light"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10sp"
+               android:layout_marginTop="10sp">
+
+               <TextView
+                   android:id="@+id/fragment_donate_city"
+                   android:layout_width="70sp"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat_light"
+                   android:text="@string/act_admin_request_city"
+                   android:textSize="18sp" />
+               <Spinner
+                   android:layout_marginLeft="10sp"
+                   android:layout_width="250sp"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/fragment_donate_edt_city_spinner"
+                   android:hint="mayank17081998@gmail.com"
+                   android:textSize="15sp"
+                   android:fontFamily="@font/montserrat_light"/>
+
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20sp"
+               android:layout_gravity="center">
+
+               <ImageView
+                   android:layout_width="150sp"
+                   android:layout_height="150sp"
+                   android:id="@+id/fragment_donate_img"
+                   android:background="@drawable/books"
+
+                   ></ImageView>
+
+
+
+
+           </LinearLayout>
+
+
+           <EditText
+               android:id="@+id/fragment_donate_item_description"
+               android:layout_width="300sp"
+               android:layout_height="100sp"
+               android:layout_gravity="center"
+               android:background="@drawable/home_drawable_border"
+               android:fontFamily="@font/montserrat_light"
+               android:hint="@string/act_admin_request_descc"
+               android:lines="5"
+               android:padding="5sp"
+               android:textSize="15sp" />
+
+           <Button
+               android:id="@+id/fragment_donate_submit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="40sp"
+               android:layout_marginBottom="20sp"
+               android:background="@drawable/add_btn_option_bk"
+               android:fontFamily="@font/montserrat_light"
+               android:paddingLeft="30sp"
+               android:paddingRight="30sp"
+               android:text="@string/act_admin_request_submit"
+               android:textColor="@android:color/white"
+               android:textSize="15sp" />
+
+       </LinearLayout>
+
+
+   </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

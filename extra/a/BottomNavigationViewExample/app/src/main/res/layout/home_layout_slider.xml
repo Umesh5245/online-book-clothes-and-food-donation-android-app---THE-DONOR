@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/layout_slider_img"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="2sp"
+        android:src="@drawable/ngo_2"/>
+    <LinearLayout
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="25sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/home_layout_Name"
+            android:text="Name"
+            android:fontFamily="@font/montserrat_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="Location"
+            android:fontFamily="@font/montserrat_light"
+            android:id="@+id/home_layout_location"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/Received_By"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lines="2"
+            android:id="@+id/home_layout_NgoName"
+            android:text="Ngo Name"
+            android:fontFamily="@font/montserrat_light"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

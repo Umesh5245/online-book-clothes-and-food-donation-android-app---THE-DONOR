@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".AdminProfileActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_toolbar"
+        app:title="Online Donations"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#2f2f2f"
+
+        android:id="@+id/toolbar"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarAdminProfile"
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+
+        android:visibility="gone" />
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="200sp"
+               android:background="@drawable/user_profile_background"
+               android:orientation="vertical"
+               >
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="100sp"
+                   android:layout_height="100sp"
+                   android:clickable="true"
+                   android:src="@drawable/identity_black"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="30sp"
+                   android:id="@+id/admin_activity_profile_upload"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="18sp"
+                   android:id="@+id/admin_activity_ngo_name_txt"
+                   android:text="Ngo Name"
+                   android:fontFamily="@font/montserrat_light"
+                   android:layout_gravity="center"/>
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:text="Account Details"
+               android:fontFamily="@font/montserrat_regular"
+               android:layout_gravity="center"
+               android:textColor="@android:color/black"
+               android:layout_marginTop="15sp"/>
+
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_marginLeft="10sp"
+               android:padding="10sp"
+               android:layout_marginTop="10sp"
+               android:layout_marginRight="10sp"
+               android:background="@color/whiteCardColor"
+               android:elevation="15sp"
+               app:cardCornerRadius="@dimen/loginCardRadius"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15sp"
+                   android:orientation="vertical">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+
+                           android:src="@drawable/ic_name"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="10sp"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="Name"
+                               android:textSize="15sp"
+                               android:textColor="@android:color/black"
+                               android:fontFamily="@font/montserrat_regular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:text="Mayank Singh"
+                               android:id="@+id/admin_activity_user_edt"
+                               />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_marginTop="15sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/ic_mobile"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="10sp"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="Mobile"
+                               android:textSize="15sp"
+                               android:textColor="@android:color/black"
+                               android:fontFamily="@font/montserrat_regular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:text="8469514210"
+                               android:id="@+id/admin_activity_nago_phone"
+                               />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_marginTop="15sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/ic_email"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="10sp"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="Email"
+                               android:textSize="15sp"
+                               android:textColor="@android:color/black"
+                               android:fontFamily="@font/montserrat_regular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:text="mayank17081998@gmail.com"
+                               android:id="@+id/admin_activity_ngo__email"
+                               />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_marginTop="15sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/ic_address"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="10sp"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="Address"
+                               android:textSize="15sp"
+                               android:textColor="@android:color/black"
+                               android:fontFamily="@font/montserrat_regular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:text="Hostel A,room 510 Rajkot,Gujarat"
+                               android:id="@+id/admin_activity_ngo_address"
+                               />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+           </androidx.cardview.widget.CardView>
+
+
+
+
+       </LinearLayout>
+
+
+
+
+   </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

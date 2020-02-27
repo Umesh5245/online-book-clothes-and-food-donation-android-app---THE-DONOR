@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AdminDonationItemActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Online Donations"
+        android:background="#2f2f2f"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbar"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:orientation="horizontal"
+
+        android:background="#502f2f2f">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_background"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="15sp"
+            android:orientation="horizontal"
+
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="10sp">
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/search_item_foreground"
+                android:id="@+id/search_icon"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:paddingTop="5sp"
+                android:backgroundTint="#ffffff"
+                android:id="@+id/admin_search_donation"
+                android:hint="Search Donation Items"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10FF22FF"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="false"
+        android:id="@+id/admin_scroll">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/admin_activity_donation_recycler"
+        />
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

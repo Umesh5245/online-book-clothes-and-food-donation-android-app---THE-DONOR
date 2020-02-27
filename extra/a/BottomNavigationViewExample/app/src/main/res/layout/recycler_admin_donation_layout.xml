@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270sp"
+        android:orientation="vertical"
+        android:gravity="top|center"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|center">
+
+            <ImageView
+                android:layout_width="200sp"
+                android:layout_height="120sp"
+                android:layout_marginTop="20sp"
+                android:id="@+id/admin_donation_donor_item_image"
+                android:src="@drawable/ngo_2"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:textColor="@android:color/white"
+                android:background="@drawable/add_btn_option_bk"
+                android:layout_marginTop="50sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="12sp"
+                android:layout_marginRight="10sp"
+                android:id="@+id/home_layout_checkbox_confirm"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/Description"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/admin_donation_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/home_drawable_border"
+            android:fontFamily="@font/montserrat_light"
+            android:padding="5sp"
+            android:text="@string/recy_admin_loc_lay_desc_detail"
+            android:textSize="12sp" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

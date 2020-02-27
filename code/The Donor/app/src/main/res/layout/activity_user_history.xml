@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/userHistoryRelative"
+    tools:context="com.example.onlinedonation.UserHistoryActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#2f2f2f"
+        app:titleTextColor="@android:color/white"
+        
+        android:id="@+id/userToolbar"
+        android:layout_height="56sp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="800sp"
+        android:layout_marginTop="57sp"
+        android:id="@+id/userHistoryRecycler"/>
+
+
+</RelativeLayout>

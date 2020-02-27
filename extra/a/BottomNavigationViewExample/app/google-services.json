@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "349099628450",
+    "firebase_url": "https://onlinedonation-df533.firebaseio.com",
+    "project_id": "onlinedonation-df533",
+    "storage_bucket": "onlinedonation-df533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349099628450:android:a6fdf48daecb80ab2d04fb",
+        "android_client_info": {
+          "package_name": "com.example.bottomnavigationviewexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349099628450-til62tqot3gjdjg0gvep8v7bfa1qf79a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQKJIoXo95pR4LjTQVRCxVKeE14JiL7ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349099628450-til62tqot3gjdjg0gvep8v7bfa1qf79a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

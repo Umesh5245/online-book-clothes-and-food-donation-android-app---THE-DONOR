@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300sp"
+    android:gravity="top|center"
+    android:background="#2f2f2f"
+    android:layout_height="150sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="@string/perrmisionformusre_per"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/userPermissionOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_btn_option_bk"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/OK"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/userPermissionCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:background="@drawable/add_btn_option_bk"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/CANCEL"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

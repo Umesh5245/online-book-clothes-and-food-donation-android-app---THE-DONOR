@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".AdminMainActivity">
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:paddingTop="10sp"
+            android:background="@drawable/user_profile_background"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:clickable="true"
+                android:src="@drawable/tony"
+                android:layout_gravity="center_horizontal|center_vertical|center"
+                android:id="@+id/admin_activity_main_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/admin_activity_main_icon_txt"
+                android:text="Sample NGO"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/whiteCardColor"
+                android:elevation="15sp"
+
+                app:cardCornerRadius="@dimen/loginCardRadius"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="2sp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:clickable="true"
+                        android:id="@+id/admin_activity_view_profile"
+                        android:src="@drawable/admin_profile"/>
+
+                    <TextView
+                        android:id="@+id/admin_activity_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="@string/act_admin_main_profile"
+
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/whiteCardColor"
+                android:elevation="15sp"
+                app:cardCornerRadius="@dimen/loginCardRadius"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10sp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                            android:id="@+id/admin_activity_img_request"
+                        android:clickable="true"
+                        android:src="@drawable/admin_request"/>
+
+                    <TextView
+                        android:id="@+id/admin_activity_request"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2sp"
+
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="@string/act_admin_main_request"
+
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/whiteCardColor"
+                android:elevation="15sp"
+                app:cardCornerRadius="@dimen/loginCardRadius"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10sp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:clickable="true"
+                        android:id="@+id/admin_activity_show_donations"
+                        android:src="@drawable/admin_show_donation"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2sp"
+
+
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="@string/act_admin_main_donation"
+
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/whiteCardColor"
+                android:elevation="15sp"
+                app:cardCornerRadius="@dimen/loginCardRadius"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10sp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:clickable="true"
+                        android:id="@+id/admin_activity_main_history"
+                        android:src="@drawable/admin_history"/>
+
+                    <TextView
+                        android:id="@+id/admin_activity_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2sp"
+
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="@string/act_admin_main_history"
+
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:layout_marginRight="100sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="100sp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:padding="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/whiteCardColor"
+                android:elevation="15sp"
+                app:cardCornerRadius="@dimen/loginCardRadius"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10sp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:id="@+id/admin_activity_notifications"
+                        android:src="@drawable/admin_notifications"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2sp"
+
+
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="@string/act_admin_main_notification"
+
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

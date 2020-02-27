@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300sp"
+    android:gravity="top|center"
+    android:background="#2f2f2f"
+    android:layout_height="150sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Click OK only if you can donate the item"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:background="@drawable/add_btn_option_bk"
+            android:fontFamily="@font/montserrat_light"
+            android:text="OK"
+            android:id="@+id/userPermissionOk"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textSize="15sp"
+            android:layout_marginLeft="5sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/add_btn_option_bk"
+            android:fontFamily="@font/montserrat_light"
+            android:id="@+id/userPermissionCancel"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

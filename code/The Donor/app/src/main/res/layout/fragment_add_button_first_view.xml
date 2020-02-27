@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="200sp"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+
+    android:background="#2f2f2f"
+    tools:context=".AddButtonFirstViewFragment">
+
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="200sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="100sp"
+
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginBottom="72sp"
+            android:src="@drawable/foo"
+
+            app:layout_constraintEnd_toStartOf="@+id/fragmentAddBtnFood" />
+
+        <Button
+            android:id="@+id/fragmentAddBtnFood"
+            android:layout_width="130sp"
+            android:background="@drawable/add_btn_option_bk"
+            android:layout_height="50sp"
+            android:layout_marginBottom="76sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:fontFamily="@font/montserrat_light"
+            android:text="FOOD"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="200sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="100sp"
+
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.956">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginEnd="8sp"
+
+            android:src="@drawable/clothes"
+
+            app:layout_constraintEnd_toStartOf="@+id/fragmentAddBtnFood" />
+
+        <Button
+            android:id="@+id/fragmentAddBtnClothes"
+            android:layout_width="130sp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="76sp"
+            android:background="@drawable/add_btn_option_bk"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:fontFamily="@font/montserrat_light"
+            android:text="CLOTHES"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="200sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginBottom="72sp"
+            android:src="@drawable/books"
+
+            app:layout_constraintEnd_toStartOf="@+id/fragmentAddBtnFood" />
+
+        <Button
+            android:id="@+id/fragmentAddBtnBook"
+            android:layout_width="130sp"
+            android:layout_height="50sp"
+            android:background="@drawable/add_btn_option_bk"
+            android:backgroundTint="@android:color/holo_blue_dark"
+
+            android:fontFamily="@font/montserrat_light"
+            android:text="BOOK"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/frgmentCloseAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_btn_option_bk"
+        android:layout_marginTop="80sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginEnd="8sp"
+        android:text="CLOSE"
+        android:textSize="15sp"
+        android:layout_marginLeft="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

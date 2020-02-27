@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:src="@drawable/ngo_2"
+            android:layout_height="100sp"
+            android:id="@+id/home_recyclerImage"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:text="NGO name"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_layout_NgoName"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:text="NGO location"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_layout_NgoLocation"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18sp"
+                android:text="REQUIREMENTS"
+                android:fontFamily="@font/montserrat_regular"
+
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="15sp"
+                android:textColor="@android:color/black"
+                />
+
+
+
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12sp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/home_layout_checkbox_confirm"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_light"
+        android:lines="4"
+        android:text="Here the description of Ngo's requirement would be displayed"
+        android:id="@+id/home_layout_txt_description"/>
+
+
+
+
+</LinearLayout>

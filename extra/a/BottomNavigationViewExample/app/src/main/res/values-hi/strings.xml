@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Donor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">रजिस्टर करें</string>
+    <string name="login_email_hint">ईमेल</string>
+    <string name="login_password_hint">पासवर्ड</string>
+    <string name="signup_login_hint">पहले से ही एक खाता है? साइन इन करें</string>
+    <string name="login_signup_hint">खाता नहीं है? साइन अप करें</string>
+    <string name="act_admin_main_profile">प्रोफ़ाइल</string>
+    <string name="act_admin_main_request">निवेदन</string>
+    <string name="act_admin_main_donation">दान</string>
+    <string name="act_admin_main_history">इतिहास</string>
+    <string name="act_admin_main_notification">सूचनाएं</string>
+    <string name="act_admin_profile_name">नाम</string>
+    <string name="act_admin_profile_mobile">मोबाइल</string>
+    <string name="act_admin_profile_email">ईमेल</string>
+    <string name="act_admin_profile_Address">पता</string>
+    <string name="act_admin_request_name">नाम</string>
+    <string name="act_admin_request_mobile">मोबाइल</string>
+    <string name="act_admin_request_email">ईमेल</string>
+    <string name="act_admin_request_city">शहर</string>
+    <string name="act_admin_request_submit">सबमिट</string>
+    <string name="act_admin_request_descc">अपने आइटम के लिए विवरण प्रदान करें</string>
+    <string name="act_admin_request_name_hint">यूजर का नाम</string>
+    <string name="act_home_Daily">दैनिक एनजीओ आवश्यकताएँ</string>
+    <string name="act_home_Today">आज के शीर्ष दान</string>
+    <string name="act_home_ourpartner">हमारे एनजीओ पार्टनर्स</string>
+    <string name="act_home_showall">सब दिखाओ</string>
+    <string name="frag_add_but_first_book">किताब</string>
+    <string name="frag_add_but_first_clothes">कपड़े</string>
+    <string name="frag_add_but_first_food">खाना</string>
+    <string name="frag_add_but_first_close">बंद करे</string>
+    <string name="submit">जमा करें</string>
+    <string name="frag_dona_pic">तस्वीर क्लिक करें</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="forget_password">पासवर्ड भूल गए?</string>
+    <string name="Register">रजिस्टर करें</string>
+    <string name="ngo_search">एनजीओ सर्च</string>
+    <string name="mobile_number">मोबाइल नंबरr</string>
+    <string name="address">पता</string>
+    <string name="account_detail">खाता विवरण</string>
+    <string name="REQUIREMENTS">आवश्यकताएँ</string>
+    <string name="Confirm">पुष्टि करें</string>
+    <string name="Posted_On">तारीख पर पोस्ट किया गया</string>
+    <string name="Received_By">द्वारा प्राप्त-:</string>
+    <string name="Ngo_Details">एनजीओ विवरण</string>
+    <string name="OK">ओके</string>
+    <string name="CANCEL">रद्द करना</string>
+    <string name="perrmisionformusre_per">यदि आप आइटम दान कर सकते हैं तो केवल ओके पर क्लिक करें</string>
+    <string name="View">देखें</string>
+    <string name="Description">विवरण</string>
+    <string name="recy_admin_loc_lay_desc_detail">आइटम का विवरण जो पोस्ट किया गया है</string>
+    <string name="Donated_By">द्वारा दान -:</string>
+    <string name="rec_admin_noti_desc_detail">आइटम का विवरण जो पोस्ट किया गया है</string>
+    <string name="Accept">स्वीकार करें</string>
+    <string name="reccc_user_dash_desc_detail">आइटम का विवरण जो पोस्ट किया गया है</string>
+    <string name="Undo">पूर्ववत करें</string>
+
+</resources>

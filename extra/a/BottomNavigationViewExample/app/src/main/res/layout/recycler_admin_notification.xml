@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donor Name"
+
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NGO Name"
+                android:id="@+id/admin_notification_donorName"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_light"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+                android:layout_weight="1"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/admin_notification_donorDate"
+            android:text="Time"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="15sp"
+            android:layout_marginTop="10sp"/>
+
+        <TextView
+            android:id="@+id/admin_notification_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/home_drawable_border"
+            android:fontFamily="@font/montserrat_light"
+            android:padding="5sp"
+            android:text="@string/rec_admin_noti_desc_detail"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/admin_notification_btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/Accept"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+
+
+</LinearLayout>
